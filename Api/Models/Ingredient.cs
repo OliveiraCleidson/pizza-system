@@ -9,8 +9,9 @@ namespace Api.Models
     [Key]
     public long Id { get; set; }
 
-    [MinLength(3)]
-    [MaxLength(20)]
+    [Required(ErrorMessage = "O campo name é obrigatório")]
+    [MinLength(3, ErrorMessage = "O nome deve conter 3 caracteres no mínimo")]
+    [MaxLength(20, ErrorMessage = "O nome deve conter 20 caracteres no máximo")]
     public string Name { get; set; }
   }
 }
