@@ -59,3 +59,4 @@
 /workspaces/pizza-system/Api/obj/Debug/net5.0/ref/Api.dll
 /workspaces/pizza-system/Api/obj/Debug/net5.0/Api.pdb
 /workspaces/pizza-system/Api/obj/Debug/net5.0/Api.genruntimeconfig.cache
+/workspaces/pizza-system/Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.InMemory.dll

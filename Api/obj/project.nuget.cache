@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Wx1YK3xrBfMonvwUq+hZqSejjDLUmwT285KvsM9UeEw/hPNxoHs+i8Qyf4RQZv+6DcrG4F21rP2PXZaaj1UH9w==",
+  "dgSpecHash": "qNcMQ3crBsxoaoQ57nxsoB0LwzmK0RbZ+XyPLIjjhCK2QcOEy0N8BHk3qMMWrrkvW2dRiuaeqTVtce/Govg9eQ==",
   "success": true,
   "projectFilePath": "/workspaces/pizza-system/Api/Api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "/home/vscode/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.7/microsoft.entityframeworkcore.abstractions.5.0.7.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.7/microsoft.entityframeworkcore.analyzers.5.0.7.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.entityframeworkcore.design/5.0.7/microsoft.entityframeworkcore.design.5.0.7.nupkg.sha512",
+    "/home/vscode/.nuget/packages/microsoft.entityframeworkcore.inmemory/5.0.7/microsoft.entityframeworkcore.inmemory.5.0.7.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.7/microsoft.entityframeworkcore.relational.5.0.7.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.entityframeworkcore.sqlserver/5.0.7/microsoft.entityframeworkcore.sqlserver.5.0.7.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
