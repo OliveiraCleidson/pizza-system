@@ -15,9 +15,16 @@ namespace Api.Controllers
 
     [Route("")]
     [HttpGet]
-    public async Task<ActionResult<List<Pizza>>> Get([FromServices] DataContext context)
+    public async Task<ActionResult<List<Pizza>>> Get([FromServices] DataContext context, [FromQuery(Name = "ingredientId")] List<long> ingredientsId)
     {
-      var models = await context.Ingredients.AsNoTracking().ToListAsync();
+
+      var models = await context.Pizzas
+
+        .Where(x => x.Ingredients
+        .Any(ingredient => ingredientsId.Count > 0 ? ingredientsId.Contains(ingredient.Id) : true))
+        .AsNoTracking()
+        .ToListAsync();
+
       return Ok(models);
     }
 
@@ -25,7 +32,7 @@ namespace Api.Controllers
     [HttpGet]
     public async Task<ActionResult<Pizza>> GetById([FromServices] DataContext context, long id)
     {
-      var model = await context.Ingredients.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+      var model = await context.Pizzas.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
 
       if (model == null)
       {
@@ -59,7 +66,7 @@ namespace Api.Controllers
     [HttpDelete]
     public async Task<IActionResult> Delete([FromServices] DataContext context, long id)
     {
-      var model = await context.Ingredients.FirstOrDefaultAsync(x => x.Id == id);
+      var model = await context.Pizzas.FirstOrDefaultAsync(x => x.Id == id);
 
       if (model == null)
       {
@@ -105,5 +112,6 @@ namespace Api.Controllers
         return BadRequest(new { message = "Ocorreu um erro inesperado" });
       }
     }
+
   }
 }
